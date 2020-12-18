@@ -1,0 +1,183 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  h4{
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+  }
+
+  body{
+      background: #262626;
+  }
+  
+  a { color: inherit; } 
+
+  p{
+    text-align: center;
+    padding-top: 0.5%;
+    color: white;
+    font-size: 16px;
+    font-family: "Times New Roman", Times, serif;
+    text-shadow: 50%;
+  }
+
+  div{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #262626;
+  }
+  ul{
+    display: flex;
+  }
+  ul li{
+    position: relative;
+    display: block;
+    color: #666;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #171515;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+  ul li:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: inherit;
+    width: inherit;
+    /* background: #d35400; */
+    border-radius: 50%;
+    transform: scale(.9);
+    z-index: -1;
+    transition: .5s;
+  }
+  ul li:nth-child(1):before{
+    background: #ff0000;
+  }
+  ul li:nth-child(2):before{
+    background: #ff0000;
+  }
+  ul li:nth-child(3):before{
+    background: #ff0000;
+  }
+  ul li:nth-child(4):before{
+    background: #ff0000;
+  }
+  ul li:nth-child(5):before{
+    background: #ff0000;
+  }
+  ul li:hover:before{
+    filter: blur(3px);
+    transform: scale(1.2);
+    /* box-shadow: 0 0 15px #d35400; */
+  }
+  ul li:nth-child(1):hover:before{
+    box-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(2):hover:before{
+    box-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(3):hover:before{
+    box-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(4):hover:before{
+    box-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(5):hover:before{
+    box-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(1):hover{
+    color: #c91515;
+    box-shadow: 0 0 15px #c91515;
+    text-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(2):hover{
+    color: #c91515;
+    box-shadow: 0 0 15px #c91515;
+    text-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(3):hover{
+    color: #c91515;
+    box-shadow: 0 0 15px #c91515;
+    text-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(4):hover{
+    color: #c91515;
+    box-shadow: 0 0 15px #c91515;
+    text-shadow: 0 0 15px #c91515;
+  }
+  ul li:nth-child(5):hover{
+    color: #c91515;
+    box-shadow: 0 0 15px #c91515;
+    text-shadow: 0 0 15px #c91515;
+  }
+
+
+  .popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 400px;
+    background-color: #555;
+    color: #fff;
+    text-align:initial;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }

@@ -8,12 +8,25 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-
-</body>
-</html><div class="social-menu">
+<div class="social-menu">
     <ul>              
       <li><a href="https://www.instagram.com/palomag0mez/"><i class="fa fa-instagram"></i></a></li>
       <li><a href="https://www.instagram.com/palomaandferb/"><i class="fa fa-instagram"></i></a></li>
-      <li><a href="https://vsco.co/palomag0mez/gallery"><img src="https://user-images.githubusercontent.com/31046098/29357022-6a573df6-8276-11e7-8fce-4202d826254f.png"></i></a></li>
+      <li><a href="https://vsco.co/palomag0mez/gallery"></i></a></li>
+      <li class="popup" onclick="myFunction1()">📞<span class="popuptext" id="myPopup1"><p>+34 111 111 111</p></span></li>
     </ul>
   </div>
+<script>
+   // When the user clicks, open the popup
+   function myFunction() {
+     var popup = document.getElementById("myPopup");
+     popup.classList.toggle("show");
+         }
+   function myFunction1() {
+     var popup = document.getElementById("myPopup1");
+     popup.classList.toggle("show");
+         }
+
+ </script>
+</body>
+</html>

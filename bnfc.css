@@ -1,0 +1,83 @@
+body {
+    background: linear-gradient(-45deg, #002244, #5a005a);
+
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    background-color: #ffffff;
+    color: #002244; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.logo {
+    width: 300px;
+    margin-bottom: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.name {
+    background: linear-gradient(90deg, #002244, #5a005a);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 24px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.position, .contact, .address {
+    color: #000000;
+}
+
+.position {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.address {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.arabic {
+    direction: rtl;
+}
+
+.icon {
+margin-right: 5px;
+height: 20px; /* Adjust height based on your preference */
+width: auto;
+vertical-align: middle;
+}
+
+.contact-link {
+    text-decoration: none; 
+    color: #002244; /* Keeping the color consistent */
+    border-bottom: 1px dotted #002244; /* This gives a subtle hint that it's clickable */
+    transition: color 0.3s, border-color 0.3s; /* For smooth color transition */
+    padding: 0 5px; /* Just to give some room for hover effect */
+}
+
+.contact-link:hover {
+    color: #5a005a; /* On hover, we change the color to the secondary color */
+    border-bottom-color: #5a005a; /* Changing the underline color on hover */
+}

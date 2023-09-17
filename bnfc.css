@@ -81,3 +81,40 @@ vertical-align: middle;
     color: #5a005a; /* On hover, we change the color to the secondary color */
     border-bottom-color: #5a005a; /* Changing the underline color on hover */
 }
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width as per your preference */
+        padding: 10px; /* Reduce the padding */
+    }
+
+    .logo {
+        width: 200px; /* Adjust the logo size */
+        margin-bottom: 10px;
+    }
+
+    .name, .arabic .name {
+        font-size: 20px; /* Adjust the font size */
+        margin-bottom: 6px;
+    }
+
+    .position {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .contact {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .address {
+        font-size: 12px;
+        margin-bottom: 6px;
+    }
+
+    .icon {
+        height: 16px; /* Adjust icon size */
+    }
+}

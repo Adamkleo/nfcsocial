@@ -9,7 +9,6 @@
     <style>
         body {
             background: linear-gradient(-45deg, #002244, #5a005a);
-
             font-family: 'Montserrat', sans-serif;
             padding: 20px;
             display: flex;
@@ -19,7 +18,7 @@
             height: 100vh;
             background-color: #ffffff;
         }
-
+    
         .container {
             text-align: center;
             padding: 20px;
@@ -30,15 +29,16 @@
             color: #002244;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-
+    
         .logo {
-            width: 400px;
+            width: 80%; /* changed to be a percentage of its container */
+            max-width: 400px; /* 400px as its max width */
             margin-bottom: 15px;
             display: block;
             margin-left: auto;
             margin-right: auto;
         }
-
+    
         .name {
             background: linear-gradient(90deg, #002244, #5a005a);
             -webkit-background-clip: text;
@@ -47,35 +47,62 @@
             margin-bottom: 8px;
             font-weight: bold;
         }
-
+    
         .position, .contact, .address {
             color: #000000;
         }
-
+    
         .position {
             font-size: 18px;
             margin-bottom: 15px;
         }
-
+    
         .contact {
             font-size: 16px;
             margin-bottom: 8px;
         }
-
+    
         .address {
             font-size: 14px;
             margin-bottom: 8px;
         }
-
+    
         .arabic {
             direction: rtl;
         }
-
+    
         .icon {
             margin-right: 5px;
             height: 20px;
             width: auto;
             vertical-align: middle;
+        }
+    
+        /* Media Query for mobile devices */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            
+            .logo {
+                width: 100%;
+            }
+    
+            .name {
+                font-size: 20px;
+            }
+    
+            .position {
+                font-size: 16px;
+            }
+    
+            .contact {
+                font-size: 14px;
+            }
+    
+            .address {
+                font-size: 12px;
+            }
         }
     </style>
 </head>

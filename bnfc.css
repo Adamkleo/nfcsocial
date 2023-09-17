@@ -1,24 +1,21 @@
-body {
-    background: linear-gradient(-45deg, #002244, #5a005a);
-
+body, html {
+    margin: 0;
     font-family: 'Montserrat', sans-serif;
-    padding: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #ffffff;
+    background: linear-gradient(-45deg, #002244, #5a005a);
 }
 
 .container {
     text-align: center;
-    padding: 20px;
+    padding: 30px; /* Increased padding slightly for desktop */
     border-radius: 8px;
     width: 100%;
     max-width: 500px;
     background-color: #ffffff;
-    color: #002244; 
+    color: #002244;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
@@ -82,39 +79,33 @@ vertical-align: middle;
     border-bottom-color: #5a005a; /* Changing the underline color on hover */
 }
 
-
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Adjust the width as per your preference */
-        padding: 10px; /* Reduce the padding */
+        padding: 15px; /* Reducing padding */
+        max-width: 90%; /* Adjusting maximum width */
     }
 
     .logo {
-        width: 200px; /* Adjust the logo size */
-        margin-bottom: 10px;
+        width: 150px; /* Making the logo smaller */
     }
 
     .name, .arabic .name {
-        font-size: 20px; /* Adjust the font size */
-        margin-bottom: 6px;
+        font-size: 18px; /* Making the names a bit smaller */
     }
 
     .position {
-        font-size: 16px;
-        margin-bottom: 10px;
+        font-size: 14px; /* Reducing font size */
     }
 
     .contact {
-        font-size: 14px;
-        margin-bottom: 6px;
+        font-size: 12px; /* Reducing font size */
     }
 
     .address {
-        font-size: 12px;
-        margin-bottom: 6px;
+        font-size: 10px; /* Reducing font size */
     }
 
     .icon {
-        height: 16px; /* Adjust icon size */
+        height: 15px; /* Adjusting the icon size */
     }
 }

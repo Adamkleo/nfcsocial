@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uno (Cambiar titulo luego)</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Sobre Nosotros</title>
 </head>
 <body>
-    <h1>1</h1>
+    <!-- First Page HTML Structure -->
+<div class="page-1">
+    <div class="left-column">
+        <!-- Logo or Title -->
+        <div class="logo">Your Restaurant</div>
+        <!-- Video Element -->
+        <video controls>
+            <source src="./assets/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <div class="right-column">
+      <a href="#secondPage" class="box">Box 1</a> <!-- This box will scroll to the second page -->
+      <a href="#thirdPage" class="box">Box 2</a> <!-- This box will scroll to the third page -->
+      <div class="box">Box 3</div> <!-- This box is not clickable -->
+      <a href="#fourthPage" class="box">Box 4</a> <!-- This box will scroll to the fourth page -->
+      <div class="box">Box 5</div> <!-- This box is not clickable -->
+      <div class="box">Box 6</div> <!-- This box is not clickable -->
+    </div>
+  </div>
+  
+  <!-- Second, Third, and Fourth Page Structure -->
+  <div id="secondPage">
+    <!-- Content of the second page here -->
+  </div>
+  
+  <div id="thirdPage">
+    <!-- Content of the third page here -->
+  </div>
+  
+  <div id="fourthPage">
+    <!-- Content of the fourth page here -->
+  </div>
+  
 </body>
 </html>

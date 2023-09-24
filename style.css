@@ -6,6 +6,7 @@ body, html {
     margin: 0;
     padding: 0;
     background: white;
+    scroll-behavior: smooth;
 }
 
 .grid-container {
@@ -62,6 +63,9 @@ body, html {
     opacity: 0; 
 }
 
+
+  
+
 @media (min-width: 769px) and (max-width: 1300px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
@@ -72,5 +76,83 @@ body, html {
 @media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* Styles for First Page */
+
+.page-1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    height: 100vh;
+}
+
+.left-column {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.right-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+video {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+@media (min-width: 601px) and (max-width: 768px) {
+    .page-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .left-column, .right-column {
+        grid-row: span 1; 
+    }
+
+    .right-column {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr); /* This ensures each box has its own space */
+    }
+
+    .box, video {
+        max-width: 100%;
+        max-height: auto;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 600px) {
+    .page-1 {
+        grid-template-columns: 1fr;
+    }
+
+    .right-column {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr); /* One box per row */
+    }
+
+    .box, video {
+        max-width: 100%;
+        max-height: auto;
     }
 }

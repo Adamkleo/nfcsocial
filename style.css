@@ -91,12 +91,13 @@ body, html {
 }
 .left-side {
     flex: 1;
-    background: red;
 }
 
 .right-side {
-    flex: 2;
-    background-color: green;
+    flex: 1.5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .left-flex-container {
@@ -122,14 +123,24 @@ body, html {
     font-size: 30px;
 }
 
+.event-container {
+    width: 48%; /* Slightly less than 50% to account for any padding/margin */
+    box-sizing: border-box;
+}
+
 /* For tablet view */
 @media (min-width: 601px) and (max-width: 768px) {
-    /* Add your CSS rules for tablet view here */
+    .event-container {
+        width: 100%; /* Make event containers take up 100% width on tablet view */
+    }
 }
 
 /* For mobile view */
 @media (max-width: 600px) {
     .flex-container {
         flex-direction: column;
+    }
+    .event-container {
+        width: 100%; /* Make event containers take up 100% width on mobile view */
     }
 }

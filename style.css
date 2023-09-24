@@ -58,13 +58,14 @@ body, html {
     opacity: 0; 
 }
 
-@media (min-width: 900px) and (max-width: 1300px) {
+@media (min-width: 769px) and (max-width: 1300px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 900px) {
+/* For screens up to 768px */
+@media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 1fr;
     }

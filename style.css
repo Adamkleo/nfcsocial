@@ -126,6 +126,7 @@ body, html {
 .event-container {
     width: 48%; /* Slightly less than 50% to account for any padding/margin */
     box-sizing: border-box;
+    padding-left: 10px;
 }
 
 /* For tablet view */

@@ -112,7 +112,7 @@ body, html {
 }
 
 video {
-    max-width: 100%;
+    width: 100%; /* Set video width to 100% of its container */
     border-radius: 5px;
 }
 
@@ -120,23 +120,20 @@ video {
     font-size: 24px;
     margin-bottom: 20px;
 }
+
+
+/* Tablet View */
 @media (min-width: 601px) and (max-width: 768px) {
     .page-1 {
         grid-template-columns: 1fr;
     }
 
-    .left-column, .right-column {
-        grid-row: span 1; 
-    }
-
     .right-column {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr); /* This ensures each box has its own space */
     }
 
-    .box, video {
-        max-width: 100%;
-        max-height: auto;
+    .box {
+        height: calc((100vh - video height - padding) / 3);
     }
 }
 
@@ -148,11 +145,9 @@ video {
 
     .right-column {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr); /* One box per row */
     }
 
-    .box, video {
-        max-width: 100%;
-        max-height: auto;
+    .box {
+        height: calc((100vh - video height - padding) / 6);
     }
 }

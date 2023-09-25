@@ -5,7 +5,7 @@
 body, html {
     margin: 0;
     padding: 0;
-    background: white;
+    background: rgb(234, 232, 221);
     scroll-behavior: smooth;
     font-family: 'Arial', sans-serif;
 
@@ -128,6 +128,7 @@ body, html {
 .event-container {
     width: calc(50% - 20px); 
     box-sizing: border-box;
+    background-color: white;
     padding: 30px;
     color: #333;
     margin: 10px;
@@ -161,6 +162,9 @@ body, html {
     line-height: 1.6;
     color: #606060;
 }
+
+
+
 
 /* For tablet view */
 @media (min-width: 601px) and (max-width: 768px) {

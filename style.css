@@ -215,9 +215,13 @@ body, html {
     text-decoration: none;
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.location a {
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Makes the color the same as the surrounding text */
+}
+
+.location a:hover {
+    text-decoration: underline; /* Optional: Adds underline back on hover for better user experience */
 }
 
 .card:hover {

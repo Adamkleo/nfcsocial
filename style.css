@@ -118,7 +118,7 @@ body, html {
     padding-top: 20px;
 }
 
-.locations-grid {
+.card-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive Grid */
     gap: 20px; /* Space between grid items */

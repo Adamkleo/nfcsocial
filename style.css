@@ -196,15 +196,18 @@ body, html {
     width: 100%; /* Make images responsive */
     max-height: 200px; /* Limit the height of images */
     object-fit: cover; /* Maintain aspect ratio */
-    padding-top: 15px;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 10px; /* Add shadow */
 }
+
 
 
 .card {
     width: calc(50% - 20px); 
     box-sizing: border-box;
     background-color: white;
-    padding: 30px;
+    padding: 20px;
     color: #333;
     margin: 10px;
     border-radius: 10px;

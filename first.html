@@ -1,45 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <link rel="stylesheet" href="style.css">
     <title>Sobre Nosotros</title>
 </head>
 <body>
-    <!-- First Page HTML Structure -->
-<div class="page-1">
-    <div class="left-column">
-        <!-- Logo or Title -->
-        <div class="logo"><a class="logo-title">Restuarante Mondariz</a></div>
-        <!-- Video Element -->
-        <video controls>
-            <source src="" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="flex-container">
+        <div class="left-side">
+            <div class="left-flex-container">
+                <a href="homepage.html"><img src="./iu-assets/logo-B.png" alt="Restaurant Logo"></a>
+                <video class="food-video" controls>
+                    <source src="./iu-assets/video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+        <div class="right-side">
+            <a href="#localizaciones" class="card">
+                <h1 class="card-title">Localizaciones</h1>
+                <h2 class="card-subtitle">Encuentra nuestro restaurante más cercano</h2>
+                <p class="card-description">Estamos situados en varios lugares por toda España. Ven a cualquiera de nuestras sucursales y prueba nuestra comida.</p>
+            </a>
+            <a href="#gastronomias" class="card">
+                <h1 class="card-title">Gastronomías</h1>
+                <h2 class="card-subtitle">Explora Nuestras Diversas Cocinas</h2>
+                <p class="card-description">Ofrecemos una variedad de cocinas, incluyendo restaurantes españoles, sushi japonés y cocina francesa.</p>
+            </a>
+            <a href="#empleos" class="card">
+                <h1 class="card-title">Empleos</h1>
+                <h2 class="card-subtitle">Únete a Nuestro Equipo</h2>
+                <p class="card-description">Explora las oportunidades para ser parte de nuestro equipo en diferentes localidades.</p>
+            </a>
+            <a href="#reservas" class="card">
+                <h1 class="card-title">Reservas</h1>
+                <h2 class="card-subtitle">Reserva Tu Mesa</h2>
+                <p class="card-description">Asegura tu lugar en nuestro restaurante haciendo una reserva fácilmente en línea.</p>
+            </a>
+            <a href="#promociones" class="card">
+                <h1 class="card-title">Promociones</h1>
+                <h2 class="card-subtitle">Descubre Ofertas Especiales</h2>
+                <p class="card-description">Mantente al tanto de nuestras últimas ofertas y promociones exclusivas.</p>
+            </a>
+            <a href="#contacto" class="card">
+                <h1 class="card-title">Contacto</h1>
+                <h2 class="card-subtitle">Estamos Aquí Para Ayudarte</h2>
+                <p class="card-description">Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+            </a>
+        </div>
+                
     </div>
-    <div class="right-column">
-      <a href="#localizaciones" class="box">Localizaciones</a> <!-- This box will scroll to the first page -->
-      <a href="#gastronomías" class="box">Gastronomías</a> <!-- This box will scroll to the second page -->
-      <a href="#empleos" class="box">Empleos</a> <!-- This box will scroll to the third page -->
-      <div class="box">Box 4</div> <!-- This box is not clickable -->
-      <div class="box">Box 5</div> <!-- This box is not clickable -->
-      <div class="box">Box 6</div> <!-- This box is not clickable -->
+    <div>
+        <div id="localizaciones">
+            <p>Section for locations</p>
+          </div>
+          
+          <div id="gastronomías">
+            <p>Section for cuisines</p>
+          </div>
+          
+          <div id="empleos">
+            <p>section for jobs</p>
+          </div>
     </div>
-  </div>
-  
-  <!-- Second, Third, and Fourth Page Structure -->
-  <div id="localizaciones">
-    <p>Section for locations</p>
-  </div>
-  
-  <div id="gastronomías">
-    <p>Section for cuisines</p>
-  </div>
-  
-  <div id="empleos">
-    <p>section for jobs</p>
-  </div>
+
+      
   
 </body>
 </html>

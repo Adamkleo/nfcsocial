@@ -19,11 +19,13 @@ body, html {
     height: 100vh;
 }
 
+
 .grid-item {
     padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-bottom: 100px;
 }
 
 .grid-item img {
@@ -172,7 +174,7 @@ body, html {
     display: flex;
     min-height: 100vh; /* Changed from height to min-height */
     width: 100vw;
-    margin-bottom: 20px; /* Added margin-bottom for spacing */
+    margin-bottom: 50px; /* Added margin-bottom for spacing */
 }
 
 .small-column {
@@ -254,7 +256,9 @@ body, html {
     color: #606060;
 }
 
-
+#empleos {
+    padding-bottom: 100px;
+}
 
 
 
@@ -285,4 +289,30 @@ body, html {
     .card-description {
         font-size: 14px;
     }
+}
+
+
+
+/* FOOTER */
+
+.footer {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+.footer > a {
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    font-family: 'Arial', sans-serif;
 }
